@@ -5,8 +5,6 @@ import sys
 #from scratch without using any builtin library 
 
 
-
-
 class MinHeap:
     def __init__(self) -> None:
         self.heap = []
