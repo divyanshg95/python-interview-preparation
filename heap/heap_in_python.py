@@ -57,6 +57,18 @@ def main():
         print(heapq.heappop(task))
     print()
 
+    print("After popping tasks")
+    for i in task:
+        print(i)
+    print()
+    print("Popping tasks")
+    for i in range(len(task)):
+        print(heapq.heappop(task))
+    print()
+    
+
+    
+
 
 if __name__ == "__main__":
     main()
