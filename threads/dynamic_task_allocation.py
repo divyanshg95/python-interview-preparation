@@ -7,8 +7,7 @@ import queue
 # time the time of Thred object creation. To dynamically assign task to 
 # thread we need to use the task queue 
 # follow program demontrate the use the use of the queue 
-
-
+# 
 # The Thread is in running state 
 # It is continuously pooling it's task queue 
 # User can submit a task, it will pick up task sequentially and finish that 
