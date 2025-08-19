@@ -1,5 +1,5 @@
 class ListNode: 
-    def __init__(self, val= 0, next=None):
+    def __init__(self, val= 0, next = None):
         self.val = val
         self.next = next
     
@@ -14,7 +14,7 @@ class LinkedList:
     def print(self):
         current = self.head
         print("Elements in List:")
-        while current is not None:
+        while current:
             print(current.val, end=" ")
             current = current.next
         print("")
@@ -22,7 +22,7 @@ class LinkedList:
     def append(self, val):
         # create a node 
         node = ListNode(val,None)
-        if self.head is None:
+        if not self.head:
             self.head = node 
         else:
             ptr = self.head 
@@ -40,13 +40,14 @@ class LinkedList:
     def search_linked_list(self, target):
         current = self.head
         
-        while current != None and current.val !=  target:
+        while current and current.val !=  target:
             current = current.next
         
         if current is None: 
             return False
         else: 
             return True
+        
     def find_length(self):
         counter = 0
         current = self.head
