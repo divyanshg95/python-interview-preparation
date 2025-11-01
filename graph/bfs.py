@@ -1,4 +1,3 @@
-
 class DiGraph:
     def __init__(self, vertices: int) -> None:
         self.V = vertices
@@ -7,7 +6,6 @@ class DiGraph:
     
     def add_edge(self, u: int, v:int) -> None:
         self.adj[u].append(v)
-
 
     
     # interesting part of the code
@@ -28,12 +26,7 @@ class DiGraph:
             if not visited[i]:
                 self.dfs_utils(i, visited)
         print()
-
                 
-
-
-
-
 
     def print_graph(self) -> None:
         """

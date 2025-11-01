@@ -100,6 +100,9 @@ class Tree:
         print("")    
 
 
+    def inorder_traversal_iterative(self):
+        
+
 def main():
     t = Tree()     
     t.insert(10)
